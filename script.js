@@ -6,7 +6,8 @@ let filme = document.querySelector('.form-control')
 async function getApi(filme){
     let request = await fetch(` http://www.omdbapi.com/?s=${filme}&apikey=e6c43dc6`)
     let data = await request.json()
-    console.log(data['Search'])
+    
+    container.innerHTML = ''
     // exibição
     data['Search'].forEach(movie=> {
         container.innerHTML += `

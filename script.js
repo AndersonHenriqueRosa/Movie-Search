@@ -1,30 +1,3 @@
-/* let container = document.querySelector('.informacao')
-let formulario = document.querySelector('.formulario')
-let filmes = document.querySelector('.form-control')
-
-async function getApi(){
-    let request = await fetch(` http://www.omdbapi.com/?s=${filmes}&apikey=e6c43dc6`)
-    let data = await request.json()
-    
-    // exibição
-    data.forEach((filme) => {
-        console.log(filme.title);
-        container.innerHTML += `
-        <img src="${data['Search'][0]['Poster']}"></img>
-        <p>${data['Search'][0]['Title']}</p>
-        `
-    })
-     
-}
-
-
-
-formulario.addEventListener('submit', function (e){
-    e.preventDefault();
-
-    getApi(filmes.value)
-    filmes.value = ''
-}) */
 
 let container = document.querySelector('.informacao')
 let formulario = document.querySelector('.formulario')
